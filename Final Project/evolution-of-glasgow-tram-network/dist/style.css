@@ -1,0 +1,3632 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: rgb(89, 89, 89);
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+h1 {
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  margin-top: -15px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  color: white;
+}
+
+h2 {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 20;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: regular;
+  color:white;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 20;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: thin;
+  color: white;
+}
+
+h4 {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 20;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-weight: thin;
+}
+
+h5 {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  color: white;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 15px;
+  margin: 10;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+h7 {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 20;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: bold;
+  color: white;
+}
+
+
+a {
+  text-decoration: none;
+  color: #92D050;
+}
+
+
+#console {
+  position: absolute;
+  border-radius: 50px;
+  width: 470px;
+  height: 45px;
+  margin: 10px;
+  margin-top: 10px;
+  margin-left: 50px;
+  padding: 10px 10px;
+  background-color: rgb(89, 89, 89, 0.85);
+}
+
+#Menu {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  margin-top: -15px;
+  margin-left: -50px;
+  margin-right: 10px;
+  padding: 0px 0px;
+  background-color: rgb(89, 89, 89, 0)
+}
+
+#Route-Filter {
+  position: absolute;
+  width: 390px;
+  height: 510px;
+  margin-top: 5px;
+  margin-left: 70px;
+  margin-right: 10px;
+  padding: 10px 10px;
+  background-color: rgb(89, 89, 89, 0.70)
+    
+}
+
+#InfoWidget {
+  position: absolute;
+  border-radius: 45px;
+  width: 470px;
+  height: 90px;
+  margin-top: 60px;
+  margin-left: -10px;
+  margin-right: 10px;
+  padding: 5px 10px 10px;
+  background-color: rgb(89, 89, 89, 0.85);
+}
+
+#slider-console {
+  position: absolute;
+  width: 431px;
+  height: 45px;
+  margin: 10px;
+  margin-top: 22px;
+  margin-left: 20px;
+  padding: 10px 10px;
+  background-color: rgb(89, 89, 89, 0);
+}
+
+#Test {
+  position: fixed;
+  border-radius: 45px;
+  width: 470px;
+  height: 90px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 10px;
+  padding: 5px 10px 10px;
+  background-color: rgb(89, 89, 89, 0.85);
+}
+
+#Info-Button {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  margin-top: 100px;
+  margin-left: 500px;
+  padding: 5px 10px 10px;
+  background-color: rgb(89, 89, 89, 0.3);
+}
+
+.session {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 12px;
+  width: 100%;
+}
+
+.mapboxgl-ctrl-geocoder {
+  width: 280px !important;
+}
+
+/* Slider Icon CSS: https://www.w3schools.com/howto/howto_js_rangeslider.asp */
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 29px;
+  height: 24px;
+  border: 0;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 28px;
+  height: 25px;
+  border: 0;
+  background: url("https://raw.githubusercontent.com/chancemwill/chancemwill.github.io/main/Tram-logo.svg");
+  
+  cursor: pointer;
+}
+
+img {
+  position: relative;
+  left: -4px;
+  bottom: 21px;
+  display: float:right;
+  width: 55px;
+  height: 55px;
+}
+
+.logo-trams {
+  position: relative;
+  float: left;
+}
+
+.logo-trams-menu {
+  position: relative;
+  float: left;
+  position: relative;
+  left: 15px;
+  bottom: 0px;
+  display: float:right;
+  width: 55px;
+  height: 55px;
+}
+.logo a {
+  display: inline-block;
+}
+.header {
+  margin: 5px 5px;
+}
+.container {
+  direction: ltr;
+}
+.header-right .right {
+  float: right;
+}
+.header-right .right span {
+  margin-left: 10px;
+}
+.clear {
+  clear: both;
+}
+.nav-wil {
+  float: right;
+  margin-top: 10px;
+}
+
+/* Button CSS: https://www.w3schools.com/howto/howto_css_round_buttons.asp */
+
+.button{
+  background-color: #92D050;
+  border-radius: 100%;
+  border: none;
+  color: rgb(89, 89, 89);
+  padding: 0px 0px;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 5px 2px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: white;
+  color: #92D050;}
+
+.button-date{
+  position: absolute;
+  background-color: rgb(89, 89, 89, 0);
+  border-radius: 20px;
+  border: 0px solid white;
+  color: white;
+  padding: 0px 0px;
+  width: 350px;
+  height: 25px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: -5px;
+  margin-left: 30px;
+  opacity: 1;
+  transition: 0.3s;
+  display: center;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+
+/* Adapted from https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+.collapsible {
+  background-color: rgb(89, 89, 89, 0);
+  border-radius: 0px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(89, 89, 89, 0.5);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  background-color: rgb(89, 89, 89, 0.3)
+}
+
+.active:after {
+  content: "\2212";
+  background-color: rgb(89, 89, 89, 0.3)
+}
+
+.content {
+  padding: 0 5px;
+  border-radius: 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(89, 89, 89, 0)
+  ;
+}
+
+/* Collapsible Info */
+
+.info-collapsible {
+  background-color: rgb(89, 89, 89, 0);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.active, .info-collapsible:hover {
+  background-color: rgb(89, 89, 89, 1);
+}
+
+.info-collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 5px;
+  border-radius: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: rgb(89, 89, 89, 1);
+}
+
+/* Adapted from https://www.w3schools.com/howto/howto_js_off-canvas.asp */
+.sidenav {
+  height: 100%; 
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: rgb(89, 89, 89, 0.95); 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; /* transition effects */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*Style for the pop-up*/
+.my-popup .mapboxgl-popup-content {
+  border-radius: 20px;
+  width: 250px;
+  background: rgb(89, 89, 89, 0.75);
+  border-top: 50px white;
+  padding: 20px;
+  color: white;
+}
+
+/* Marker tweaks */
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+/* Styling Source: https://stackoverflow.com/questions/44554692/style-a-mapbox-popups-pointer-indicator*/
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+    border-bottom-color: rgb(89, 89, 89, 0.75) !important;
+    }
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+    border-top-color: rgb(89, 89, 89, 0.75) !important;
+    }
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+    border-right-color: rgb(89, 89, 89, 0.75) !important;
+    }
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+    border-left-color: rgb(89, 89, 89, 0.75)!important;
+    }
+
+
+/* Adapted from https://www.w3schools.com/howto/howto_css_switch.asp */
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 19px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #92D050;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  transform: translateX(11x);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Info switch */
+.infoswitch {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+.infoswitch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.infoslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .infoslider {
+  background-color: red;
+}
+input:focus + .infoslider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .infoslider:before {
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  transform: translateX(11x);
+}
+
+/* Rounded sliders */
+.infoslider.round {
+  border-radius: 34px;
+}
+
+.infoslider.round:before {
+  border-radius: 50%;
+}
+
+/* Custom buttons based and adpated from https://www.tutorialstonight.com/css-toggle-switch-with-text*/
+
+/*Display Info Box Button*/
+  .toggle {
+      --width: 20px;
+      --height: calc(var(--width) / 1);
+
+      position: fixed;
+      display: inline-block;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: var(--height);
+      cursor: pointer;
+      margin-top: 30px;
+      margin-left:-50px;
+    }
+
+    .toggle input {
+      display: none;
+    }
+
+    .toggle .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #92D050;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle .slider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle input:checked+.slider {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .toggle input:checked+.slider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .toggle .labels {
+      position: absolute;
+      top: 6px;
+      left: -1px;
+      width: 100%;
+      height: 100%;
+      font-family: TimesNewRoman;
+      font-weight: bold;
+      font-size: 18px;
+      font-style: italic;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 8px;
+      top: -6px;
+      color: #ffffff;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 8px;
+      top: -6px;
+      color: #4d4d4d;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .toggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .toggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*All Routes Button*/
+  .artoggle {
+      --width: 130px;
+      --height: calc(var(--width) / 3.5);
+
+      position: relative;
+      margin-left: 60px;
+      margin-top: 5px;
+      display: inline-block;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .artoggle input {
+      display: none;
+    }
+
+    .artoggle .arslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .artoggle .arslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .argtoggle input:checked+.arslider {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .artoggle input:checked+.arslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .artoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: -1px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .artoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 13px;
+      top: 4px;
+      color: #ffffff;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .artoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 13px;
+      top: 4px;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .artoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .artoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Light Green Button*/
+  .lgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+    .lgtoggle input {
+      display: none;
+    }
+    .lgtoggle .lgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: white;
+      transition: all 0.4s ease-in-out;
+    }
+    .lgtoggle .lgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+    .lggtoggle input:checked+.slider {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .lgtoggle input:checked+.slider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+    .lgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+    .lgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: rgb(146,208,80);
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+    .lgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .lgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+    .lgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Wider Text Single Digit Number - Light Green Button*/
+  .wlgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+    .wlgtoggle input {
+      display: none;
+    }
+    .wlgtoggle .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: white;
+      transition: all 0.4s ease-in-out;
+    }
+    .wlgtoggle .slider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+    .wlggtoggle input:checked+.slider {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .wlgtoggle input:checked+.slider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+    .wlgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+    .wlgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: rgb(146,208,80);
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+    .wlgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .wlgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+    .wlgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Wider Text Double Digit Number - Light Green Button*/
+
+  .xlgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+    .xlgtoggle input {
+      display: none;
+    }
+    .xlgtoggle .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: white;
+      transition: all 0.4s ease-in-out;
+    }
+    .xlgtoggle .slider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+    .xlggtoggle input:checked+.slider {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .xlgtoggle input:checked+.slider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xlgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xlgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: rgb(146,208,80);
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xlgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xlgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xlgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Wider Text Double Digit Number + Suffix - Light Green Button*/
+
+  .xxlgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xxlgtoggle input {
+      display: none;
+    }
+
+    .xxlgtoggle .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: white;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxlgtoggle .slider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxlggtoggle input:checked+.slider {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .xxlgtoggle input:checked+.slider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xxlgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxlgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: rgb(146,208,80);
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxlgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: #ffffff;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxlgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xxlgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+
+
+/*Wide Silver Button*/
+  .wsltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .wsltoggle input {
+      display: none;
+    }
+
+    .wsltoggle .wslslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #D9D9D9; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wsltoggle .wslslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wsltoggle input:checked+.wslslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .wsltoggle input:checked+.wslslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .wsltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wsltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: rgb(89, 89, 89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wsltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: (89, 89, 89); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wsltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .wsltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Silver Grey Button*/
+  .sgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .sgtoggle input {
+      display: none;
+    }
+
+    .sgtoggle .sgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #D9D9D9; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .sgtoggle .sgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .sgtoggle input:checked+.sgslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .sgtoggle input:checked+.sgslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .sgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .sgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: rgb(89, 89, 89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .sgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: (89, 89, 89); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .sgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .sgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Large Silver Grey Button*/
+  .xsgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xsgtoggle input {
+      display: none;
+    }
+
+    .xsgtoggle .xsgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #D9D9D9; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xsgtoggle .xsgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xsgtoggle input:checked+.xsgslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xsgtoggle input:checked+.xsgslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xsgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xsgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: rgb(89, 89, 89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xsgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: (89, 89, 89); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xsgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xsgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Extra Large Silver Grey Button*/
+  .xxsgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xxsgtoggle input {
+      display: none;
+    }
+
+    .xxsgtoggle .xxsgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #D9D9D9; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxsgtoggle .xxsgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxsgtoggle input:checked+.xxsgslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xxsgtoggle input:checked+.xxsgslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xxsgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxsgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: rgb(89, 89, 89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxsgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: (89, 89, 89); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxsgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xxsgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Blue Button*/
+  .bltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .bltoggle input {
+      display: none;
+    }
+
+    .bltoggle .blslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #4472C4; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .bltoggle .blslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .bltoggle input:checked+.blslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .bltoggle input:checked+.blslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .bltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .bltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .bltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: #4472C4; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .bltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .bltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Wide Blue Button*/
+  .wbltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .wbltoggle input {
+      display: none;
+    }
+
+    .wbltoggle .wblslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #4472C4; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wbltoggle .wblslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wbltoggle input:checked+.wblslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .wbltoggle input:checked+.wblslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .wbltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wbltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wbltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: #4472C4; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wbltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .wbltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Large Blue Button*/
+  .xbltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xbltoggle input {
+      display: none;
+    }
+
+    .xbltoggle .xblslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #4472C4; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xbltoggle .xblslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xbltoggle input:checked+.xblslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xbltoggle input:checked+.xblslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xbltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xbltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xbltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: #4472C4; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xbltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xbltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/* Extra Large Blue Button*/
+  .xxbltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xxbltoggle input {
+      display: none;
+    }
+
+    .xxbltoggle .xxblslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #4472C4; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxbltoggle .xxblslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxbltoggle input:checked+.xxblslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xxbltoggle input:checked+.xxblslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xxbltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxbltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxbltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: #4472C4; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxbltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xxbltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Red Button*/
+  .rdtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .rdtoggle input {
+      display: none;
+    }
+
+    .rdtoggle .rdslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(192,0,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .rdtoggle .rdslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .rdtoggle input:checked+.rdslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .rdtoggle input:checked+.rdslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .rdtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .rdtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .rdtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: rgb(192,0,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .rdtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .rdtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Wide Red Button*/
+  .wrdtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .wrdtoggle input {
+      display: none;
+    }
+
+    .wrdtoggle .wrdslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(192,0,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wrdtoggle .wrdslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wrdtoggle input:checked+.wrdslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .wrdtoggle input:checked+.wrdslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .wrdtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wrdtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wrdtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: rgb(192,0,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wrdtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .wrdtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Large Red Button*/
+  .xrdtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xrdtoggle input {
+      display: none;
+    }
+
+    .xrdtoggle .xrdslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(192,0,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xrdtoggle .xrdslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xrdtoggle input:checked+.xrdslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xrdtoggle input:checked+.xrdslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xrdtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xrdtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xrdtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: rgb(192,0,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xrdtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xrdtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Extra Large Red Button*/
+  .xxrdtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xxrdtoggle input {
+      display: none;
+    }
+
+    .xxrdtoggle .xxrdslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(192,0,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxrdtoggle .xxrdslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxrdtoggle input:checked+.xxrdslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xxrdtoggle input:checked+.xxrdslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xxrdtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxrdtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxrdtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: rgb(192,0,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxrdtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xxrdtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Yellow Button*/
+  .yltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .yltoggle input {
+      display: none;
+    }
+
+    .yltoggle .ylslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(255,192,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .yltoggle .ylslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .yltoggle input:checked+.ylslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .yltoggle input:checked+.ylslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .yltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .yltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: rgb(89,89,89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .yltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: rgb(218,166,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .yltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .yltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Wide Yellow Button*/
+  .wyltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .wyltoggle input {
+      display: none;
+    }
+
+    .wyltoggle .wylslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(255,192,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wyltoggle .wylslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wyltoggle input:checked+.wylslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .wyltoggle input:checked+.wylslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .wyltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wyltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: rgb(89,89,89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wyltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: rgb(218,166,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wyltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .wyltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Large Yellow Button*/
+  .xyltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xyltoggle input {
+      display: none;
+    }
+
+    .xyltoggle .xylslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(255,192,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xyltoggle .xylslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xyltoggle input:checked+.xylslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xyltoggle input:checked+.xylslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xyltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xyltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: rgb(89,89,89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xyltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: rgb(218,166,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xyltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xyltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Extra Large Yellow Button*/
+  .xxyltoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xxyltoggle input {
+      display: none;
+    }
+
+    .xxyltoggle .xxylslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: rgb(255,192,0); /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxyltoggle .xxylslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxyltoggle input:checked+.xxylslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xxyltoggle input:checked+.xxylslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xxyltoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxyltoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: rgb(89,89,89); /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxyltoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: rgb(218,166,0); /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxyltoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xxyltoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Dark Green Button*/
+  .dgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .dgtoggle input {
+      display: none;
+    }
+
+    .dgtoggle .dgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #548235; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .dgtoggle .dgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .dgtoggle input:checked+.dgslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .dgtoggle input:checked+.dgslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .dgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .dgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .dgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      color: #548235; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .dgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .dgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Wide Green Button*/
+  .wdgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .wdgtoggle input {
+      display: none;
+    }
+
+    .wdgtoggle .wdgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #548235; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wdgtoggle .wdgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wdgtoggle input:checked+.wdgslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .wdgtoggle input:checked+.wdgslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .wdgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wdgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wdgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: #548235; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .wdgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .wdgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Large Green Button*/
+  .xdgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xdgtoggle input {
+      display: none;
+    }
+
+    .xdgtoggle .xdgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #548235; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xdgtoggle .xdgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xdgtoggle input:checked+.xdgslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xdgtoggle input:checked+.xdgslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xdgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xdgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xdgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: #548235; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xdgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xdgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Extra Large Green Button*/
+  .xxdgtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .xxdgtoggle input {
+      display: none;
+    }
+
+    .xxdgtoggle .xxdgslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #548235; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxdgtoggle .xxdgslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxdgtoggle input:checked+.xxdgslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .xxdgtoggle input:checked+.xxdgslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .xxdgtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxdgtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxdgtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      color: #548235; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .xxdgtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .xxdgtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Light Green Button*/
+  .grtoggle {
+      --width: 27px;
+      --height: calc(var(--width) / 1);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .grtoggle input {
+      display: none;
+    }
+
+    .grtoggle .grslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #92D050; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .grtoggle .grslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .grtoggle input:checked+.grslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .grtoggle input:checked+.grslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .grtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .grtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 6px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .grtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: #92D050; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .grtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .grtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Paisley North Button*/
+  .pntoggle {
+      --width: 95px;
+      --height: calc(var(--width) / 3.52);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .pntoggle input {
+      display: none;
+    }
+
+    .pntoggle .pnslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #4472C4; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pntoggle .pnslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pntoggle input:checked+.pnslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .pntoggle input:checked+.pnslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .pntoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pntoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 8px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pntoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: #4472C4; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pntoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .pntoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Paisley West Button*/
+  .pwtoggle {
+      --width: 95px;
+      --height: calc(var(--width) / 3.52);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+
+    .pwtoggle input {
+      display: none;
+    }
+
+    .pwtoggle .pwslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #548235; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pwtoggle .pwslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pwtoggle input:checked+.pwslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+
+    .pwtoggle input:checked+.pwslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+
+    .pwtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pwtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 8px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pwtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: #548235; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .pwtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+
+    .pwtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+/*Airdrie Button*/
+  .airtoggle {
+      --width: 55px;
+      --height: calc(var(--width) / 2);
+
+      position: relative;
+      display: inline-block;
+      margin-top: 5px;
+      margin-left: 3px;
+      margin-left: 3px;
+      width: var(--width);
+      height: var(--height);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--height);
+      cursor: pointer;
+    }
+    .airtoggle input {
+      display: none;
+    }
+    .airtoggle .airslider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--height);
+      background-color: #548235; /*Change back colour on unactive here!*/
+      transition: all 0.4s ease-in-out;
+    }
+    .airtoggle .airslider::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(var(--height));
+      height: calc(var(--height));
+      border-radius: calc(var(--height) / 2);
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.4s ease-in-out;
+    }
+    .airtoggle input:checked+.airslider {
+      background-color: white; /*Change back colour on active here!*/
+    }
+    .airtoggle input:checked+.airslider::before {
+      transform: translateX(calc(var(--width) - var(--height)));
+    }
+    .airtoggle .labels {
+      position: absolute;
+      top: 6px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto;
+      font-weight: bold;
+      text-align: center;
+      font-size: 13px;
+      transition: all 0.4s ease-in-out;
+    }
+    .airtoggle .labels::after {
+      content: attr(data-off);
+      position: absolute;
+      left: 8px;
+      top: 0px;
+      color: white; /*Unactive text colour!*/
+      text-align: center;
+      opacity: 1;
+      transition: all 0.4s ease-in-out;
+    }
+    .airtoggle .labels::before {
+      content: attr(data-on);
+      position: absolute;
+      left: 7px;
+      top: 0px;
+      color: #548235; /*Active text colour!*/
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+      opacity: 0;
+      transition: all 0.4s ease-in-out;
+    }
+    .airtoggle input:checked~.labels::after {
+      opacity: 0;
+    }
+    .airtoggle input:checked~.labels::before {
+      opacity: 1;
+    }
+
+
+/*Based on Call Out Instrutions: https://www.w3schools.com/howto/howto_js_callout.asp*/
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: rgb(89, 89, 89, 0.85);
+  border-radius: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+
+/*Based on Modal Box Instrutions: https://www.w3schools.com/howto/howto_css_modals.asp*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(89, 89, 89, 0.85);
+  display: block;
+  border-radius: 20px;
+  width: 60% !important; /* Full width */
+  height: 68% !important; /* Full height */
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: none;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 32px;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#Helpbutton {
+  float: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(89, 89, 89, 0.85);
+}
+
+
+.tipbutton{
+  position: center;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 30%;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0px 0px;
+  width: 500px;
+  height: 40px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 5px 0px;
+  margin-top: 0px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tipbutton:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;}
+
+
+.nextbutton{
+  position: float;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 100%;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 0px 0px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 5px 0px;
+  margin-top: -50px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nextbutton:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;}
+
+.helpbutton{
+  position: fixed;
+  right: 9px;
+  top: 191px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20%;
+  border: 2px solid;
+  border-color: rgb(89, 89, 89, 0.15);
+  color: black;
+  padding: 0px 0px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-family: Roboto;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin: 5px 0px;
+  margin-top: 0px;
+  opacity: 1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.helpbutton:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(146, 208, 80, 0.9);
+}
+
+
+/*Based on Slide Show Instrutions:https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+.mySlides {display: none}
+
+img {vertical-align: center;
+  height: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: 60%;
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  position: relative;
+  
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+</style>
